@@ -321,6 +321,10 @@ Some usful queires
 Dereferencing 
 -------------
 
+We also allow dereferencing our dataset URIs using LodView link. LodView allows RELD users to browse our RDF resource
+and offers easy-to-use representation of the RDF data. An example resource from the LodView is shown in the following figure.
+To see it online click [here](https://reld.dice-research.org/lodview/cbs.html)
+ 
 .. image:: images/lod.png
 
 Usage
