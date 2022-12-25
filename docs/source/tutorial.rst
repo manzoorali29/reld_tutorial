@@ -211,6 +211,7 @@ Some usful queires
 -------------------
 
 .. code-block:: SPARQL
+   
    Get all Relations from NYT-FB dataset.
 
    SELECT DISTINCT ?relation
