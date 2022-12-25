@@ -21,7 +21,10 @@ For the ttl version of schema click on link
 
 Used Namespaces
 -----------------
-Some of the namespaces we used in **RELD**::
+Some of the namespaces we used in **RELD**:
+
+.. code-block:: ttl
+   
    @prefix reldr: <http://reld.dice-research.org/resource/>
    @prefix reldp: <http://reld.dice-research.org/property/>
    @prefix dbo: <http://dbpedia.org/ontology/>
