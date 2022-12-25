@@ -5,3 +5,5 @@ Example
    :toctree: generated
 
    lumache
+
+   To check it
