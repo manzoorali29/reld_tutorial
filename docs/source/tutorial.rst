@@ -210,7 +210,7 @@ Following is an example resource:
 Some usful queires
 -------------------
 
-.. code-block:: sparql
+.. code-block:: sql
 
    Get all Relations from NYT-FB dataset.
 
