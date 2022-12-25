@@ -284,11 +284,11 @@ Some usful queires
 
 .. code-block:: sparql
 
-   #Generate benchmark of having sentences length less than 50, and other required features
+   # Generate benchmark of having sentences length less than 50, and other required features
 
-   PREFIX reld : <http://reld.dice-research.org/schema/>
-   PREFIX nif : <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
-   PREFIX prof : <http://www.w3.org/ns/dx/prof/>
+   PREFIX reld:<http://reld.dice-research.org/schema/>
+   PREFIX nif:<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+   PREFIX prof:<http://www.w3.org/ns/dx/prof/>
    SELECT DISTINCT
    ? sent ( count (?t ) as Tokens ) ( count (?e ) as ?Entities ) ( count (?stmt ) as ?Statment )
    WHERE
@@ -304,11 +304,11 @@ Some usful queires
 
 .. code-block:: sparql
 
-   #A balance dataset of relations each having 700 sentneces
+   # A balance dataset of relations each having 700 sentneces
    
-   PREFIX reld: <http://reld.dice-research.org/schema/>
-   PREFIX nif : <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
-   PREFIX prof : <http://www.w3.org/ns/dx/prof/>
+   PREFIX reld:<http://reld.dice-research.org/schema/>
+   PREFIX nif:<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+   PREFIX prof:<http://www.w3.org/ns/dx/prof/>
    SELECT DISTINCT ?properties COUNT (?sent )
    WHERE {
       ? sent a nif:String ;
