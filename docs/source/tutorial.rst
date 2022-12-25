@@ -213,14 +213,40 @@ Some usful queires
 .. code-block:: sparql
 
    # Get all Relations from NYT-FB dataset.
-   
+
    SELECT DISTINCT ?relation
    FROM <http://reld.dice-research.org/Nyt-FB>
    WHERE {
       ?s a rdf:Statement;
-      rdf:predicate ?relation.
+         rdf:predicate ?relation.
    }
 
+.. code-block:: sparql
+
+   #Get all triples from Wikipedia-Wikidata
+
+   SELECT DISTINCT count(*)
+   FROM <http://reld.dice-research.org/WikiRE>
+   WHERE {
+      ?s ?p ?o . 
+   }
+
+.. code-block:: sparql
+
+   # Get all distinct String instances which have number of tokens higher than 250
+
+   PREFIX reldv: <http://reld.dice-research.org/schema/>
+   PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+   PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+   SELECT DISTINCT ?sent
+   WHERE {
+      ?sent a nif:String;
+            prof:hasToken ?token.
+      
+      ?token ?p ?o.
+   }
+   GROUP BY ?sent
+   HAVING (COUNT (?token ) > 250)
 
 Dereferencing 
 -------------
