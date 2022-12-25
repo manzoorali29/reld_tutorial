@@ -19,5 +19,5 @@ Contents
 .. toctree::
 
    usage
-   api
+   example
 RELD is now hosted on Read the docs
