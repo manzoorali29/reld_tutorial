@@ -286,38 +286,37 @@ Some usful queires
 
    #Generate benchmark of having sentences length less than 50, and other required features
 
-   PREFIX reld : < http :// reld . dice - research . org / schema / >
-   PREFIX nif : < http :// persistence . uni - leipzig . org / nlp2rdf / ontologies / nif - core # >
-   PREFIX prof : < http :// www . w3 . org / ns / dx / prof / >
+   PREFIX reld : <http://reld.dice-research.org/schema/>
+   PREFIX nif : <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+   PREFIX prof : <http://www.w3.org/ns/dx/prof/>
    SELECT DISTINCT
-   ? sent ( count (? t ) as Tokens ) ( count (? e ) as ? Entities ) ( count (? stmt ) as ?
-   Statment )
+   ? sent ( count (?t ) as Tokens ) ( count (?e ) as ?Entities ) ( count (?stmt ) as ?Statment )
    WHERE
    {
-      ? sent a nif : String ;
-      reld : hasStatement ? stmt ;
-      reld : ha sNamedE ntity ? e ;
-      prof : hasToken ? token .
-      ? token ? p ? t .
+      ?sent a nif:String ;
+      reld:hasStatement ?stmt ;
+      reld:hasNamedE ntity ?e ;
+      prof:hasToken ?token .
+      ?token ?p ?t .
    }
-   GROUP BY ? sent
-   HAVING ( COUNT (? stmt ) > 4 && COUNT (? e ) > 10 && COUNT (? t ) < 50)
+   GROUP BY ?sent
+   HAVING ( COUNT(?stmt) > 4 && COUNT (?e) > 10 && COUNT(?t ) < 50)
 
 .. code-block:: sparql
 
    #A balance dataset of relations each having 700 sentneces
    
-   PREFIX reld : < http :// reld . dice - research . org / schema / >
-   PREFIX nif : < http :// persistence . uni - leipzig . org / nlp2rdf / ontologies / nif - core # >
-   PREFIX prof : < http :// www . w3 . org / ns / dx / prof / >
-   SELECT DISTINCT ? properties COUNT (? sent )
+   PREFIX reld: <http://reld.dice-research.org/schema/>
+   PREFIX nif : <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+   PREFIX prof : <http://www.w3.org/ns/dx/prof/>
+   SELECT DISTINCT ?properties COUNT (?sent )
    WHERE {
-      ? sent a nif : String ;
-      reld : hasStatement ? stmt .
-      ? stmt rdf : predicate ? properties .
+      ? sent a nif:String ;
+      reld:hasStatement ?stmt .
+      ?stmt rdf:predicate ?properties .
    }
-   GROUP BY ? properties
-   HAVING ( COUNT (? sent ) = 700)
+   GROUP BY ?properties
+   HAVING ( COUNT(?sent ) = 700)
 
 Dereferencing 
 -------------
