@@ -10,9 +10,10 @@ Contents
 --------
 
 .. toctree::
-   hidden:
+   :hidden:
 
-   usage
-   api
-   example
+   intro
+   tutorial
+   availablity
+   insights
 RELD is now hosted on Read the docs
