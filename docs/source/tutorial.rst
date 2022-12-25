@@ -211,12 +211,12 @@ Some usful queires
 -------------------
 
 .. code-block:: sparql
-
+   # Get all Relations from NYT-FB dataset.
    SELECT DISTINCT ?relation
    FROM <http://reld.dice-research.org/Nyt-FB>
    WHERE {
-   ?s a rdf:Statement;
-   rdf:predicate ?relation.
+      ?s a rdf:Statement;
+      rdf:predicate ?relation.
    }
 
 
