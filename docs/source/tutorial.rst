@@ -210,8 +210,8 @@ Following is an example resource:
 Some usful queires
 -------------------
 
-.. code-block:: SPARQL
-   
+.. code-block:: sparql
+
    Get all Relations from NYT-FB dataset.
 
    SELECT DISTINCT ?relation
