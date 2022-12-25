@@ -52,6 +52,7 @@ Example Resource
 Following is an example resource:
 
 .. code-block:: ttl
+   
    @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
    @prefix ns1: <http://www.w3.org/ns/dx/prof/> @prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#>
    @prefix ns3: <http://www.w3.org/ns/>
