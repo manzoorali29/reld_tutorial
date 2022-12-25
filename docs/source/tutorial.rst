@@ -52,9 +52,10 @@ Example Resource
 Following is an example resource:
 
 .. code-block:: ttl
-   
+
    @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
-   @prefix ns1: <http://www.w3.org/ns/dx/prof/> @prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#>
+   @prefix ns1: <http://www.w3.org/ns/dx/prof/> 
+   @prefix ns2: <http://purl.org/net/nknouf/ns/bibtex#>
    @prefix ns3: <http://www.w3.org/ns/>
    @prefix owl: <http://www.w3.org/2002/07/owl#>
    @prefix prov: <http://www.w3.org/ns/prov#>
@@ -62,6 +63,7 @@ Following is an example resource:
    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
    @prefix reld: <http://reld.dice-research.org/schema/>
    @prefix reldr: <http://reld.dice-research.org/resource/>
+   @prefix reldp: <http://reld.dice-research.org/property/>
    @prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 
    # STRING INSTANCE
@@ -169,6 +171,7 @@ Following is an example resource:
       rdf:_0 "."^^xsd:string ;
       rdf:_1 ","^^xsd:string
       rdf:_2 "."^^xsd:string .
+
    # STATEMENT INSTANCE
    reldr:Stmt13751810 a rdf:Statement ;
       reld:objEndIndex 7 ;
@@ -177,20 +180,24 @@ Following is an example resource:
       reld:subFollowObj false ;
       reld:subStartIndex 0 ;
       rdf:object reldr:video_game ;
-      rdf:predicate reldr:P31 ;
+      rdf:predicate reldp:P31 ;
       rdf:subject reldr:sonic_extreme .
+
    # SUBJECT/ENTITY INSTANCE
    reldr:sonic_extreme a rdfs:Resource,
       prov:Entity ;
       rdfs:label "Sonic_Extreme"^^xsd:string,
       "sonic_extreme"^^xsd:string .
+
    # OBJECT INSTANCE
    reldr:brave_video_game a rdfs:Resource ;
       rdfs:label "Brave_video_game"^^xsd:string .
+
    # PREDICATE INSTANCE
-   reldr:P31 a rdf:Property ;
+   reldp:P31 a rdf:Property ;
       rdfs:label "P31"^^xsd:string ;
-      owl:equivalentProperty reldr:instance_of .
+      owl:equivalentProperty reldp:instance_of .
+
    # DATASET INSTANCE
    reldr:ds_08 a reld:Dataset ;
       dbo:knownFor "relation_extraction_and_natural_language"^^xsd:string ;
@@ -202,6 +209,16 @@ Following is an example resource:
 
 Some usful queires
 -------------------
+
+.. code-block:: SPARQL
+   Get all Relations from NYT-FB dataset.
+
+   SELECT DISTINCT ?relation
+   FROM <http://reld.dice-research.org/Nyt-FB>
+   WHERE {
+   ?s a rdf:Statement;
+   rdf:predicate ?relation.
+   }
 
 
 Dereferencing 
