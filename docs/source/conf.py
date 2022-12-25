@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'RELD'
-copyright = '2021, Graziella'
-author = 'Graziella'
+copyright = '2022, DICE Group'
+author = 'Manzoor Ali'
 
 release = '0.1'
 version = '0.1.0'
