@@ -210,9 +210,7 @@ Following is an example resource:
 Some usful queires
 -------------------
 
-.. code-block:: sql
-
-   Get all Relations from NYT-FB dataset.
+.. code-block:: sparql
 
    SELECT DISTINCT ?relation
    FROM <http://reld.dice-research.org/Nyt-FB>
