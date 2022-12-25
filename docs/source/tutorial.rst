@@ -321,6 +321,7 @@ Some usful queires
 Dereferencing 
 -------------
 
+.. image:: images/lod.png
 
 Usage
 ------
