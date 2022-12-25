@@ -290,12 +290,12 @@ Some usful queires
    PREFIX nif:<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
    PREFIX prof:<http://www.w3.org/ns/dx/prof/>
    SELECT DISTINCT
-   ? sent ( count (?t ) as Tokens ) ( count (?e ) as ?Entities ) ( count (?stmt ) as ?Statment )
+   ?sent ( count(?t ) as ?Tokens) ( count (?e) as ?Entities) ( count(?stmt) as ?Statment)
    WHERE
    {
       ?sent a nif:String ;
       reld:hasStatement ?stmt ;
-      reld:hasNamedE ntity ?e ;
+      reld:hasNamedEntity ?e ;
       prof:hasToken ?token .
       ?token ?p ?t .
    }
@@ -309,9 +309,9 @@ Some usful queires
    PREFIX reld:<http://reld.dice-research.org/schema/>
    PREFIX nif:<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
    PREFIX prof:<http://www.w3.org/ns/dx/prof/>
-   SELECT DISTINCT ?properties COUNT (?sent )
+   SELECT DISTINCT ?properties COUNT(?sent )
    WHERE {
-      ? sent a nif:String ;
+      ?sent a nif:String ;
       reld:hasStatement ?stmt .
       ?stmt rdf:predicate ?properties .
    }
