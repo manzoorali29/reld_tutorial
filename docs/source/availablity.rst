@@ -5,11 +5,12 @@ Availablity
 
 Source Code
 -----------
-
+Source code for converting RE datasets to RDF is available on our `Github repository <https://github.com/dice-group/RELD>`_ . 
+The requirments for running the code, and the basic commond to rund the code are given on the README file.
 
 
 Live Endpoint
-=============
+-------------
 
 The `live endpoint <http://reld.cs.upb.de:8890/sparql>`_ of **RELD** is available for querying anywhere on the internet. 
 We have made it available on the Virtuoso open-source server.The endpoint might result in slow query execution. 
