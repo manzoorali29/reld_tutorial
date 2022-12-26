@@ -330,7 +330,7 @@ To see it online click [here](https://reld.dice-research.org/lodview/cbs.html)
 Usage
 ------
 
--- csv-table:: Named Graphs
+.. csv-table:: Named Graphs
    :header: Dataset, Named Graphs 
    :widths: 15,30
 
