@@ -407,7 +407,7 @@ We represents metadata of **RELD** in void representation.
 
    :RELD
       rdf:type void:Dataset ;
-      foaf:homepage <https://manzoorali29.github.io/index.html> ;
+      foaf:homepage <https://reld-tutorial.readthedocs.io/en/latest/intro.html> ;
       dcterms:title "Knowledge Graph of Relation Extraction" ;
       void:sparqlEndpoint <http://reld.cs.upb.de:8890/sparql>;
       dcterms:contributor <https://dice-research.org> ;
