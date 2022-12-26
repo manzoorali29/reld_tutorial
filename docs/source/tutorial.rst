@@ -332,7 +332,9 @@ Named Graphs
 
 To use the data of a single relation extraction dataset **RELD** uses a named graph. Named graphs in **RELD** are kept using
 the http://reld.dice-research.org/``dataset_name``. ``dataset_name`` in URI represents the name of each dataset. For simplicity, we use the names
-of the datasets as shown in the following Table. Some datasets names are shorten for simplicity.
+of the datasets as shown in the following :ref:`<Table>`. Some datasets names are shorten for simplicity.
+
+.. _table:
 
 .. csv-table:: Named Graphs with their used URIs in RELD
    :header: Dataset, Named Graphs 
