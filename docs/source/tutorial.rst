@@ -354,5 +354,41 @@ of the datasets as shown in the following :ref:`Table <table>` . Some datasets n
    T-REx,http://reld.dice-research.org/T-Rex 
 
 
+nif:String
+----------
+
+Sentences/Documents are represented in the String IRI format as http://reld.dice-research.org/resource`S_ID`. 
+ID  in `S_ID` is the unique value for each string or document. All the properties of the sentences/documents are attached to the sentences.
+The detail of each property is available in our schema.
+
+rdf:Statement
+-------------
+
+Each string have a corresponding single or multiple annoted statements. This rdf statement also have a unique IRI like the `nif:String`.
+Each statement has attached Subject and object also has attached predicate which represents the corresponding relation.
+
+Relation
+--------
+
+Relations are attached with statement as `rdf:predicate`. The IRI are different than other resources to uniquly differentiate predicate from 
+other reources. Instead of resource we use `property` for relations http://reld.dice-research.org/property/`property_name`. 
+
+RELD Prefered Namespaces
+------------------------
+
+We use three different namespaces for RELD. 
+* reld: for schema of reld such as classes and properties
+* reldr: for resources such as instances 
+* reldp: for properties/predicates 
+
+.. csv-table::
+
+   :header: Namespaces, IRI
+   :widths: 10, 30
+
+   reld, http://reld.dice-research.org/schema/
+   rledr,http://reld.dice-research.org/resource/
+   reldp,http://reld.dice-research.org/property/
+
 
 
