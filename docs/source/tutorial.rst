@@ -323,15 +323,13 @@ Dereferencing
 
 We also allow dereferencing our dataset URIs using LodView link. LodView allows RELD users to browse our RDF resource
 and offers easy-to-use representation of the RDF data. An example resource from the LodView is shown in the following figure.
-To see it online click [here](https://reld.dice-research.org/lodview/cbs.html)
+To see it online click `here <https://reld.dice-research.org/lodview/cbs.html>`_
 
 .. image:: images/lod.png
 
-Usage
-------
-   Named Graphs
-   -------------
-   
+Named Graphs
+------------
+
 To use the data of a single relation extraction dataset **RELD** uses a named graph. Named graphs in **RELD** are kept using
 the http://reld.dice-research.org/``dataset_name``. ``dataset_name`` in URI represents the name of each dataset. For simplicity, we use the names
 of the datasets as shown in the following Table. Some datasets names are shorten for simplicity.
@@ -348,5 +346,7 @@ of the datasets as shown in the following Table. Some datasets names are shorten
    Wikipedia-Wikidata,http://reld.dice-research.org/WikiRE
    DocRED,http://reld.dice-research.org/DocRed
    T-REx,http://reld.dice-research.org/T-Rex 
+
+
 
 
