@@ -2,11 +2,7 @@
 Tutorial
 ========
 
-.. _installation:
-
-Installation
-============
-
+On this and next few pages, we will introduce the basics implemenation usage and example of **RELD** knowledge Graph.
 
 
 Framework
@@ -15,7 +11,7 @@ Framework
 The diagram shows the basic **RELD** Framework. This diagram explains the basic schema of the **RELD**.
 The edges represent the relations between different classes, while the rectangles represent classes in our schema.
 The complete explanation of vocabularies and ontologies is available in other sections. 
-For the ttl version of schema click on link
+For the TTL version of schema, click on the `link <https://github.com/dice-group/RELD/blob/main/ontology.ttl>`_
 
 .. image:: /images/mod.png
 
@@ -322,9 +318,9 @@ Some usful queires
 Dereferencing 
 =============
 
-We also allow dereferencing our dataset URIs using LodView link. LodView allows RELD users to browse our RDF resource
-and offers easy-to-use representation of the RDF data. An example resource from the LodView is shown in the following figure.
-To see it online click `here <https://reld.dice-research.org/lodview/cbs.html>`_
+We also allow dereferencing our dataset URIs using the LodView link. LodView allows RELD users to browse our RDF resource
+and offers an easy-to-use representation of the RDF data. An example resource from LodView is shown in the following figure.
+To see it online, click `here <https://reld.dice-research.org/lodview/cbs.html>`_
 
 .. image:: images/lod.png
 
@@ -336,7 +332,7 @@ Named Graphs
 
 To use the data of a single relation extraction dataset **RELD** uses a named graph. Named graphs in **RELD** are kept using
 the http://reld.dice-research.org/``dataset_name``. ``dataset_name`` in URI represents the name of each dataset. For simplicity, we use the names
-of the datasets as shown in the following :ref:`Table <table>` . Some datasets names are shorten for simplicity.
+of the datasets as shown in the following :ref:`Table <table>` . Few datasets names are shorten for simplicity.
 
 .. _table:
 
@@ -364,14 +360,15 @@ The detail of each property is available in our schema.
 rdf:Statement
 -------------
 
-Each string have a corresponding single or multiple annoted statements. This rdf statement also have a unique IRI like the `nif:String`.
-Each statement has attached Subject and object also has attached predicate which represents the corresponding relation.
+Each string has a corresponding single or multiple annotated statements. This RDF statement also has a unique IRI like the `nif:String`.
+Each statement has an attached Subject and the object also has an attached predicate which represents the corresponding relation.
+
 
 Relation
 --------
 
-Relations are attached with statement as `rdf:predicate`. The IRI are different than other resources to uniquly differentiate predicate from 
-other reources. Instead of resource we use `property` for relations http://reld.dice-research.org/property/`property_name`. 
+Relations are attached with statements as `rdf:predicate`. The IRI is different than other resources to uniquely differentiate predicate from 
+other resources. Instead of resource we use `property` for relations http://reld.dice-research.org/property/`property_name`. 
 
 RELD Prefered Namespaces
 ------------------------
