@@ -37,7 +37,11 @@ Same file names can be used during querying on our live endpoint.
 
 Public Availability
 -------------------
-The resource is publicaly available on the community registery with a unique DOI: `10.5281/zenodo.7429677`
+The resource is publicaly available on the community registery with a unique DOI:
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7429677.svg
+   :target: https://doi.org/10.5281/zenodo.7429677
+
 on Zenodo `here <https://zenodo.org/record/7429677#.Y6lt1dLMJuU>`_. 
 
 
