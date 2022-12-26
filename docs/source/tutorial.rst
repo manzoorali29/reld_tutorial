@@ -377,12 +377,12 @@ RELD Prefered Namespaces
 ------------------------
 
 We use three different namespaces for RELD. 
+
 * reld: for schema of reld such as classes and properties
 * reldr: for resources such as instances 
 * reldp: for properties/predicates 
 
-.. csv-table::
-
+.. csv-table:: Namespaces with IRIs
    :header: Namespaces, IRI
    :widths: 10, 30
 
