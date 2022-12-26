@@ -1,15 +1,16 @@
+========
 Tutorial
 ========
 
 .. _installation:
 
 Installation
-------------
+============
 
 
 
 Framework
----------
+=========
 
 The diagram shows the basic **RELD** Framework. This diagram explains the basic schema of the **RELD**.
 The edges represent the relations between different classes, while the rectangles represent classes in our schema.
@@ -20,7 +21,7 @@ For the ttl version of schema click on link
 
 
 Used Namespaces
------------------
+===============
 Some of the namespaces we used in **RELD**:
 
 .. code-block:: ttl
@@ -48,7 +49,7 @@ Some of the namespaces we used in **RELD**:
    @prefix prof: <http://www.w3.org/ns/dx/prof/hasToken>
 
 Example Resource
------------------
+================
 Following is an example resource:
 
 .. code-block:: ttl
@@ -208,7 +209,7 @@ Following is an example resource:
 
 
 Some usful queires
--------------------
+==================
 
 .. code-block:: sparql
 
@@ -319,13 +320,16 @@ Some usful queires
    HAVING ( COUNT(?sent ) = 700)
 
 Dereferencing 
--------------
+=============
 
 We also allow dereferencing our dataset URIs using LodView link. LodView allows RELD users to browse our RDF resource
 and offers easy-to-use representation of the RDF data. An example resource from the LodView is shown in the following figure.
 To see it online click `here <https://reld.dice-research.org/lodview/cbs.html>`_
 
 .. image:: images/lod.png
+
+Usage
+======
 
 Named Graphs
 ------------
