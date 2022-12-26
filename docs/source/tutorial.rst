@@ -324,8 +324,23 @@ Dereferencing
 We also allow dereferencing our dataset URIs using LodView link. LodView allows RELD users to browse our RDF resource
 and offers easy-to-use representation of the RDF data. An example resource from the LodView is shown in the following figure.
 To see it online click [here](https://reld.dice-research.org/lodview/cbs.html)
- 
+
 .. image:: images/lod.png
 
 Usage
 ------
+
+-- csv-table:: Named Graphs
+   :header: Dataset, Named Graphs 
+   :widths: 15,30
+
+   SemEval 2010 Task 8, http://reld.dice-research.org/SemEval
+   NYT-FB, http://reld.dice-research.org/Nyt-FB
+   FewREL, http://reld.dice-research.org/FewRel
+   Google-RE, http://reld.dice-research.org/Google-RE
+   WebNLG, http://reld.dice-research.org/WebNLG
+   Wikipedia-Wikidata,http://reld.dice-research.org/WikiRE
+   DocRED,http://reld.dice-research.org/DocRed
+   T-REx,http://reld.dice-research.org/T-Rex 
+
+
