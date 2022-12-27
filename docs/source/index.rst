@@ -14,6 +14,8 @@ Contents
 
    intro
    tutorial
+   schema
    availablity
    insights
+
 RELD is now hosted on Read the docs
