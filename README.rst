@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
-=======================================
+RELD KG Docs
+============
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub contains docs of **RELD** knowlege graph
 
-Read the tutorial here:
 
-https://docs.readthedocs.io/en/stable/tutorial/
