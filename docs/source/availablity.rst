@@ -60,6 +60,9 @@ The open-source code available on GitHub is easily extendable to convert other d
 The RELD dataset is publicly available from the SPARQL endpoint, where the user can execute a
 SPARQL query for desired output.
 
+Version
+-------
+Currently it is the second version of **RELD**. We will keep updating this version info as the new changes occur. The schema is of version 0.2.
 
 License
 -------
