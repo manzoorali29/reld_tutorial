@@ -17,7 +17,7 @@ For the TTL version of schema, click on the `link <https://github.com/dice-group
 
 Mapping to RELD
 ===============
-.. image:: /images/map.png
+.. image:: /images/map.svg
 
 Used Namespaces
 ===============
