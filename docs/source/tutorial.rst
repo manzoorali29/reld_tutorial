@@ -17,7 +17,22 @@ For the TTL version of schema, click on the `link <https://github.com/dice-group
 
 Mapping to RELD
 ===============
+
+The following diagram shows an overview of all the steps requires to convert a relation
+extraction dataset to RDF and integrate it into an RDF-based RELD knowledge graph. The input is a relation extraction dataset available in different
+formats such as XML, txt, or JSON. Then a python script using `RDFLib
+<https://github.com/RDFLib/rdflib>`_ and other python libraries converts the
+dataset to RDF form. Furthermore, we use `sameAs <http://sameas.org/>`_ and
+`DBpedia spotlight https://www.dbpedia-spotlight.org/docs/spotlight.pdf`_ to link entities with other large knowledge bases such
+as `DBpedia <https://www.dbpedia.org/>`_ and `Wikidata <https://www.wikidata.org/wiki/Wikidata:Main_Page>`_ . In addition, we use tools like `Spacy <https://spacy.io/>`_ and
+`NLTK <https://www.nltk.org/>`_  to add missing annotations. Finally combines all the previous steps
+using RELD schema and makes it available publicly using a dereferenceable
+knowledge graph using `LodView <https://lodview.it/>`_.
+
+
 .. image:: /images/map.svg
+
+
 
 Used Namespaces
 ===============
