@@ -17,7 +17,7 @@ For the TTL version of schema, click on the `link <https://github.com/dice-group
 
 Mapping to RELD
 ===============
-.. image:: /images/map.pdf
+.. image:: /images/map.png
 
 Used Namespaces
 ===============
@@ -207,7 +207,7 @@ Following is an example resource:
       schema:url <https://hadyelsahar.github.io/t-rex/downloads> .
 
 
-Some usful queires
+Some useful queires
 ==================
 
 .. code-block:: sparql
